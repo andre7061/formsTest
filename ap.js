@@ -31,12 +31,9 @@ const creatNode=(name,val)=>{
 form.addEventListener('submit', function (e) {
     e.preventDefault()
  const list = this.querySelectorAll('input');
- list.forEach(el=>{
-    // if((el.name =='city')){
+ list.forEach(el=>{ 
         creatNode(el.name,el.value)
-   // }
  })
    const select= this.querySelector('#select');
    creatNode(select.name,select.value)
-   console.log(select.value)
 })
