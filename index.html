@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <h1 class="title">Form</h1>
+    <form method="post">
+        <label for="name">Введите имя:
+            <input name="name" id="name" type="text" required placeholder="Введите имя">
+        </label>
+        <label for="email">Введите email:
+            <input name="email" id="email" type="email" required placeholder="Введите email">
+        </label>
+        <label for="password">Введите пароль:
+            <input name="password" id="password" type="password" required placeholder="Введите пароль">
+        </label>
+        <label for="password2">Повторите пароль:
+            <input name="password2" id="password2" type="password" required placeholder="Повторите пароль">
+            <span class="eror">пароли не совпадают</span>
+        </label>
+        <label  for="select">Выберити город:
+            <select name="select" id="select">
+                <option value="1">Москва</option>
+                <option value="2">Нижний Новгород</option>
+            </select>
+        </label>
+        <label class="inline inline-label" for="chec">
+            <input class="inline  inline-check" name="chec" id="chec" type="checkbox" required>
+            Lorem ipsum dolor sit amet.
+        </label>
+        <button>Отправить</button>
+    </form>
+    <div class="output"></div>
+    <script src="ap.js"></script>
+</body>
+</html>
